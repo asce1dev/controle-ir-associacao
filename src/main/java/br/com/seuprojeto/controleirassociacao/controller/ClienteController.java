@@ -44,6 +44,14 @@ public class ClienteController {
 	    return ResponseEntity.status(HttpStatus.CREATED).body(salvo);
 	}
 	
+	@PostMapping("/clientes-test")
+	public ResponseEntity<Cliente> salvarClienteTest(@RequestBody Cliente cliente) {
+	    System.out.println(">>> [TESTE] Controller acionado com: " + cliente);
+	    Cliente salvo = clienteService.salvarCliente(cliente);
+	    return ResponseEntity.status(HttpStatus.CREATED).body(salvo);
+	}
+
+	
 	@PutMapping("/{clienteId}")
 	public Cliente atualizar(@PathVariable Long clienteId,
 			@RequestBody Cliente cliente) {
