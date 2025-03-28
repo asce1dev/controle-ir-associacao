@@ -1,0 +1,60 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# === Java / Maven / Spring Boot ===
+/target/
+*.log
+*.tmp
+*.bak
+*.swp
+*.class
+
+# === STS / Eclipse ===
+.classpath
+.project
+.settings/
+.factorypath
+
+# === IntelliJ IDEA / VS Code (caso você use também) ===
+.idea/
+*.iml
+.vscode/
+
+# === SOs (macOS, Windows) ===
+.DS_Store
+Thumbs.db
+
+# === Arquivos de build que não precisam ir pro repo ===
+*.jar
+*.war
