@@ -25,7 +25,7 @@ public class ClienteService {
 //	}
 	
 	public Cliente salvarCliente(Cliente cliente) {
-	    System.out.println(">>> SALVANDO CLIENTE: " + cliente);
+	    System.out.println(cliente);
 	    return clienteRepository.save(cliente);
 	}
 
