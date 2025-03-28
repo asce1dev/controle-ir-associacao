@@ -20,10 +20,15 @@ public class ClienteService {
 		return clienteRepository.findAll();
 	}
 	
-	public Cliente salvarCliente(Cliente cliente) {
-		return clienteRepository.save(cliente);
-	}
+//	public Cliente salvarCliente(Cliente cliente) {
+//		return clienteRepository.save(cliente);
+//	}
 	
+	public Cliente salvarCliente(Cliente cliente) {
+	    System.out.println(">>> SALVANDO CLIENTE: " + cliente);
+	    return clienteRepository.save(cliente);
+	}
+
 	public void deletarCliente(Long id) {
 		try {
 			clienteRepository.deleteById(id);
